@@ -34,7 +34,7 @@ for f in sorted(os.listdir(path)):
         (x_i, y_i, w_i, h_i) = cv2.boundingRect(c)
         if cv2.contourArea(c) > MinCountourArea:
             #cv2.imshow('frame',frame)
-            cv2.imwrite(output_directory + "/" + f, frame_thresh)
+            cv2.imwrite(output_directory + "/" + f, frame)
             #k = cv2.waitKey(30) & 0xff
             #if k == 27:
                # break
